@@ -4,7 +4,6 @@ public class Controller {
 
     API apis[] = {new GoogleAPI(), new BookingComAPI(), new TripAdvisorAPI()};
 
-
     public Room[] requestRooms(int price, int persons, String hotel, String city){
 
         int quantityOfRooms = 0;
@@ -57,7 +56,7 @@ public class Controller {
             System.out.println("There is no same rooms");
         } else {
             for (int i = 0; i < countSameRooms; i++){
-                System.out.println("Same rooms " +api1 +"  "+api2 + resultingRooms[i].toString());
+                System.out.println("Same rooms " + resultingRooms[i].toString());
             }
         }
         return resultingRooms;
