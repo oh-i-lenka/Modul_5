@@ -37,7 +37,7 @@ public class Controller {
         for (int i = 0; i < api1Array.length; i++){
             for (int j=0; j < api2Array.length; j++){
                 if (api1Array[i].equals(api2Array[j]) && api1Array[i].hashCode()== api2Array[j].hashCode()){
-                    countSameRooms++;// здесь? нет, здесь я считаю длину массива, ну и здесь, в принципе тоже
+                    countSameRooms++;
                 }
             }
         }
@@ -47,7 +47,7 @@ public class Controller {
         for (int i = 0; i < api1Array.length; i++){
             for (int j=0; j < api2Array.length; j++){
                 if (api1Array[i].equals(api2Array[j]) && api1Array[i].hashCode()== api2Array[j].hashCode()){
-                    resultingRooms[countResultingRooms] = api1Array [i];//я забыла проставить итое
+                    resultingRooms[countResultingRooms] = api1Array [i];
                     countResultingRooms++;
                 }
             }
